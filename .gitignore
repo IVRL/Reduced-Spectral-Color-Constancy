@@ -1,0 +1,26 @@
+# IDE
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+
+# Large data — keep directory structure via .gitkeep
+datasets/**
+!datasets/**/
+!datasets/**/.gitkeep
+
+data_raw/kaust/radiance/**
+data_raw/kaust/h5/**
+!data_raw/kaust/h5/.gitkeep
+
+# CBC model saves (large pickles)
+models/cbc_histograms/**
+!models/cbc_histograms/.gitkeep
+
+# Experiment results — keep CSVs, ignore everything else
+results/**
+!results/*.csv
+
+# Misc
+CLAUDE.md
